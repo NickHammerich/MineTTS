@@ -3,14 +3,14 @@
 
 This is a mod for Minecraft Java Edition which adds TTS (error)-related stuff such as:
 1) Mobs 
-- 1.1) Nickolay
-- 1.2) Sam
-- 1.3) Irina.
+- [ ] 1.1) Nickolay
+- [ ] 1.2) Sam
+- [ ] 1.3) Irina.
 2) Blocks
 - 2.1) OS blocks:
-- - 2.1.1) Windows 7 Block
-- [X] 2.1.2) Windows 10 Block
-- - 2.1.3) Windows 11 Block.
+- - [ ] 2.1.1) Windows 7 Block
+- - [X] 2.1.2) Windows 10 Block
+- - [ ] 2.1.3) Windows 11 Block.
     
  PLANNED STUFF:
   1) A disk drive w/ explosive function upon putting a cake into it.
