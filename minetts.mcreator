@@ -1,0 +1,53 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Win10Block",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "win_10_block"
+    },
+    {
+      "name": "Win10Tiley",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "win_10_tiley"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.win_10_tiley.name": "WinMetronium Piece",
+      "tile.win_10_block.name": "WinMetrium Ore"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "minetts",
+    "modName": "MineTTS",
+    "version": "1.0.0",
+    "author": "qwer, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.12.2",
+    "modElementsPackage": "co.nickxwlm.minetts",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

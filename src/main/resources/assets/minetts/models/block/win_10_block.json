@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minetts:blocks/windows10block",
+    "up": "minetts:blocks/windows10block",
+    "north": "minetts:blocks/windows10block",
+    "east": "minetts:blocks/windows10block",
+    "south": "minetts:blocks/windows10block",
+    "west": "minetts:blocks/windows10block",
+    "particle": "minetts:blocks/windows10block"
+  }
+}
