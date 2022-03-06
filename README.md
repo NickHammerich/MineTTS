@@ -9,7 +9,7 @@ This is a mod for Minecraft Java Edition which adds TTS (error)-related stuff su
 2) Blocks
 - 2.1) OS blocks:
 - - 2.1.1) Windows 7 Block
-- - 2.1.2) Windows 10 Block
+- [X] 2.1.2) Windows 10 Block
 - - 2.1.3) Windows 11 Block.
     
  PLANNED STUFF:
