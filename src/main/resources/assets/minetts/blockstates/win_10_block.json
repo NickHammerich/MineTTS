@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "minetts:win_10_block"
+    }
+  }
+}
