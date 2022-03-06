@@ -23,6 +23,7 @@ This is a mod for Minecraft Java Edition which adds TTS (error)-related stuff su
   8) TTS Foes
   9) And more!
 
+Also, as for source code: this is supposed to be opened on MCreator 2021.1.
 
 Wait for more stuff going on! Stay tuned ;-)
 
