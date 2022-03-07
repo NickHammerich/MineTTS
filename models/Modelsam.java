@@ -2,7 +2,7 @@
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
-public static class Modelsteve extends ModelBase {
+public static class Modelsam extends ModelBase {
 	private final ModelRenderer Head;
 	private final ModelRenderer Body;
 	private final ModelRenderer RightArm;
@@ -10,7 +10,7 @@ public static class Modelsteve extends ModelBase {
 	private final ModelRenderer RightLeg;
 	private final ModelRenderer LeftLeg;
 
-	public Modelsteve() {
+	public Modelsam() {
 		textureWidth = 64;
 		textureHeight = 64;
 
@@ -70,6 +70,8 @@ public static class Modelsteve extends ModelBase {
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
 		this.RightArm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 		this.LeftLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
+		this.Head.rotateAngleY = f3 / (180F / (float) Math.PI);
+		this.Head.rotateAngleX = f4 / (180F / (float) Math.PI);
 		this.LeftArm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 		this.RightLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
 	}

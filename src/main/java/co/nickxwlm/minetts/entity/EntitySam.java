@@ -3,8 +3,10 @@ package co.nickxwlm.minetts.entity;
 
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
 import net.minecraft.world.biome.Biome;
@@ -14,15 +16,13 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.init.Items;
-import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAISwimming;
-import net.minecraft.entity.ai.EntityAIOpenDoor;
-import net.minecraft.entity.ai.EntityAIMoveIndoors;
 import net.minecraft.entity.ai.EntityAILookIdle;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.EnumCreatureAttribute;
+import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.model.ModelRenderer;
@@ -32,20 +32,27 @@ import net.minecraft.client.model.ModelBase;
 import java.util.Iterator;
 import java.util.ArrayList;
 
+import co.nickxwlm.minetts.item.ItemWin10Tiley;
 import co.nickxwlm.minetts.ElementsMinettsMod;
 
 @ElementsMinettsMod.ModElement.Tag
-public class EntityNickolay extends ElementsMinettsMod.ModElement {
-	public static final int ENTITYID = 1;
-	public static final int ENTITYID_RANGED = 2;
-	public EntityNickolay(ElementsMinettsMod instance) {
-		super(instance, 3);
+public class EntitySam extends ElementsMinettsMod.ModElement {
+	public static final int ENTITYID = 3;
+	public static final int ENTITYID_RANGED = 4;
+	public EntitySam(ElementsMinettsMod instance) {
+		super(instance, 4);
 	}
 
 	@Override
 	public void initElements() {
-		elements.entities.add(() -> EntityEntryBuilder.create().entity(EntityCustom.class).id(new ResourceLocation("minetts", "nickolay"), ENTITYID)
-				.name("nickolay").tracker(20, 3, true).egg(-16777216, -52480).build());
+		elements.entities.add(() -> EntityEntryBuilder.create().entity(EntityCustom.class).id(new ResourceLocation("minetts", "sam"), ENTITYID)
+				.name("sam").tracker(64, 3, true).egg(-16777216, -6750208).build());
+	}
+
+	@Override
+	public void init(FMLInitializationEvent event) {
+		Biome[] spawnBiomes = allbiomes(Biome.REGISTRY);
+		EntityRegistry.addSpawn(EntityCustom.class, 1, 15, 15, EnumCreatureType.CREATURE, spawnBiomes);
 	}
 
 	private Biome[] allbiomes(net.minecraft.util.registry.RegistryNamespaced<ResourceLocation, Biome> in) {
@@ -60,14 +67,14 @@ public class EntityNickolay extends ElementsMinettsMod.ModElement {
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(EntityCustom.class, renderManager -> {
-			return new RenderLiving(renderManager, new Modelsteve(), 0.5f) {
+			return new RenderLiving(renderManager, new Modelsam(), 0.5f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("minetts:textures/nickolai_mob.png");
+					return new ResourceLocation("minetts:textures/sam.png");
 				}
 			};
 		});
 	}
-	public static class EntityCustom extends EntityVillager {
+	public static class EntityCustom extends EntityCreature {
 		public EntityCustom(World world) {
 			super(world);
 			setSize(0.6f, 1.8f);
@@ -82,8 +89,6 @@ public class EntityNickolay extends ElementsMinettsMod.ModElement {
 			this.tasks.addTask(1, new EntityAIWander(this, 1));
 			this.tasks.addTask(2, new EntityAILookIdle(this));
 			this.tasks.addTask(3, new EntityAISwimming(this));
-			this.tasks.addTask(4, new EntityAIMoveIndoors(this));
-			this.tasks.addTask(5, new EntityAIOpenDoor(this, true));
 		}
 
 		@Override
@@ -93,7 +98,7 @@ public class EntityNickolay extends ElementsMinettsMod.ModElement {
 
 		@Override
 		protected Item getDropItem() {
-			return new ItemStack(Items.IRON_NUGGET, (int) (1)).getItem();
+			return new ItemStack(ItemWin10Tiley.block, (int) (1)).getItem();
 		}
 
 		@Override
@@ -126,21 +131,21 @@ public class EntityNickolay extends ElementsMinettsMod.ModElement {
 			if (this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
 				this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(1000D);
 			if (this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) != null)
-				this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(0D);
+				this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3D);
 		}
 	}
 
 	// Made with Blockbench 4.1.5
 	// Exported for Minecraft version 1.7 - 1.12
 	// Paste this class into your mod and generate all required imports
-	public static class Modelsteve extends ModelBase {
+	public static class Modelsam extends ModelBase {
 		private final ModelRenderer Head;
 		private final ModelRenderer Body;
 		private final ModelRenderer RightArm;
 		private final ModelRenderer LeftArm;
 		private final ModelRenderer RightLeg;
 		private final ModelRenderer LeftLeg;
-		public Modelsteve() {
+		public Modelsam() {
 			textureWidth = 64;
 			textureHeight = 64;
 			Head = new ModelRenderer(this);
@@ -194,6 +199,8 @@ public class EntityNickolay extends ElementsMinettsMod.ModElement {
 			super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
 			this.RightArm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 			this.LeftLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
+			this.Head.rotateAngleY = f3 / (180F / (float) Math.PI);
+			this.Head.rotateAngleX = f4 / (180F / (float) Math.PI);
 			this.LeftArm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 			this.RightLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
 		}
