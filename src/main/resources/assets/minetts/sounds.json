@@ -86,5 +86,35 @@
         "stream": false
       }
     ]
+  },
+  "ayia-sam": {
+    "category": "neutral",
+    "subtitle": "subtitles.ayia-sam",
+    "sounds": [
+      {
+        "name": "minetts:ayia-sam",
+        "stream": false
+      }
+    ]
+  },
+  "sam-wrong-item": {
+    "category": "neutral",
+    "subtitle": "subtitles.sam-wrong-item",
+    "sounds": [
+      {
+        "name": "minetts:nopes",
+        "stream": false
+      }
+    ]
+  },
+  "sam-yum": {
+    "category": "neutral",
+    "subtitle": "subtitles.sam-yum",
+    "sounds": [
+      {
+        "name": "minetts:happys",
+        "stream": false
+      }
+    ]
   }
 }

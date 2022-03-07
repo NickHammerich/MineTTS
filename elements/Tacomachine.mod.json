@@ -1,0 +1,48 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 176,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Taco-a-storer:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Taco-a-storer:",
+          "x": 160,
+          "y": 72
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #0",
+          "x": 240,
+          "y": 69
+        }
+      }
+    ],
+    "onTick": {
+      "name": "EraseTaco"
+    },
+    "onClosed": {
+      "name": "EraseTaco"
+    }
+  }
+}
