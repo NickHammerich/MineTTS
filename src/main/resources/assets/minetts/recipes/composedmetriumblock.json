@@ -1,0 +1,42 @@
+{
+  "group": "minetts",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minetts:win_10_tiley"
+    },
+    "1": {
+      "item": "minetts:win_10_tiley"
+    },
+    "2": {
+      "item": "minetts:win_10_tiley"
+    },
+    "3": {
+      "item": "minetts:win_10_tiley"
+    },
+    "4": {
+      "item": "minetts:win_10_tiley"
+    },
+    "5": {
+      "item": "minetts:win_10_tiley"
+    },
+    "6": {
+      "item": "minetts:win_10_tiley"
+    },
+    "7": {
+      "item": "minetts:win_10_tiley"
+    },
+    "8": {
+      "item": "minetts:win_10_tiley"
+    }
+  },
+  "result": {
+    "item": "minetts:w_10block",
+    "count": 1
+  }
+}

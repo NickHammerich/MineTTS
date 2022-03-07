@@ -1,7 +1,7 @@
 {
   "id_map": {
-    "GUI": 1,
-    "ENTITY": 4
+    "ENTITY": 5,
+    "GUI": 1
   },
   "mod_elements": [
     {
@@ -83,6 +83,53 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ttsmod_tab"
+    },
+    {
+      "name": "W10block",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "w_10block"
+    },
+    {
+      "name": "Composedmetriumblock",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "composedmetriumblock"
+    },
+    {
+      "name": "Decomposemetriumblock",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "decomposemetriumblock"
+    },
+    {
+      "name": "Cdrs",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cdrs"
+    },
+    {
+      "name": "CompactDisk",
+      "type": "gun",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 5
+      },
+      "registry_name": "compact_disk"
     }
   ],
   "variable_elements": [],
@@ -151,12 +198,15 @@
       "subtitles.sam-idle1": "Sam\u0027s speech",
       "tile.win_10_block.name": "WinMetrium Ore",
       "subtitles.sam-death1": "Sam dies",
+      "tile.w_10block.name": "WinMetrium Block",
       "subtitles.nickolay-death": "Nickolay dies",
       "subtitles.nickolay-death1": "Nickolay dies",
       "subtitles.nickolay-damage1": "Nickolay gets hit",
+      "item.cdrs.name": "Working Compact Disk",
       "item.win_10_tiley.name": "WinMetronium Piece",
       "entity.sam.name": "Microsoft Sam",
       "subtitles.nickolay-idle1": "Nickolay\u0027s speech",
+      "item.compact_disk.name": "Compact Disk",
       "entity.nickolay.name": "Digalo Nickolai"
     }
   },
@@ -167,7 +217,7 @@
   "workspaceSettings": {
     "modid": "minetts",
     "modName": "TTSmod",
-    "version": "0.0.10a",
+    "version": "0.0.12a",
     "author": "WinLinuxMan, Nick Hammerich",
     "websiteURL": "https://mcreator.net",
     "license": "GNU General Public License version 2 (GPLv2)",
