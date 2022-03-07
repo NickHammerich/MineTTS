@@ -13,9 +13,11 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAILookIdle;
@@ -29,9 +31,12 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelBase;
 
+import java.util.Map;
 import java.util.Iterator;
+import java.util.HashMap;
 import java.util.ArrayList;
 
+import co.nickxwlm.minetts.procedure.ProcedureTacochecker;
 import co.nickxwlm.minetts.item.ItemWin10Tiley;
 import co.nickxwlm.minetts.ElementsMinettsMod;
 
@@ -119,6 +124,25 @@ public class EntitySam extends ElementsMinettsMod.ModElement {
 		@Override
 		protected float getSoundVolume() {
 			return 1.0F;
+		}
+
+		@Override
+		public boolean processInteract(EntityPlayer entity, EnumHand hand) {
+			super.processInteract(entity, hand);
+			int x = (int) this.posX;
+			int y = (int) this.posY;
+			int z = (int) this.posZ;
+			ItemStack itemstack = entity.getHeldItem(hand);
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureTacochecker.executeProcedure($_dependencies);
+			}
+			return true;
 		}
 
 		@Override
