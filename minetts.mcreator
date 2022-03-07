@@ -1,6 +1,7 @@
 {
   "id_map": {
-    "ENTITY": 2
+    "GUI": 1,
+    "ENTITY": 4
   },
   "mod_elements": [
     {
@@ -32,6 +33,47 @@
         "1": 2
       },
       "registry_name": "nickolay"
+    },
+    {
+      "name": "Sam",
+      "type": "mob",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 3,
+        "1": 4
+      },
+      "registry_name": "sam"
+    },
+    {
+      "name": "Win10pickaxe",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "win_10pickaxe"
+    },
+    {
+      "name": "WinMetriumpaxeCraft",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "win_metriumpaxe_craft"
+    },
+    {
+      "name": "EasterEgg",
+      "type": "gui",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 1
+      },
+      "registry_name": "easter_egg"
     }
   ],
   "variable_elements": [],
@@ -39,8 +81,10 @@
   "language_map": {
     "en_us": {
       "item.win_10_tiley.name": "WinMetronium Piece",
+      "entity.sam.name": "Microsoft Sam",
+      "item.win_10pickaxe.name": "WinMetrium Pickaxe",
       "tile.win_10_block.name": "WinMetrium Ore",
-      "entity.nickolay.name": "Nickolay"
+      "entity.nickolay.name": "Digalo Nickolai"
     }
   },
   "foldersRoot": {
@@ -50,7 +94,7 @@
   "workspaceSettings": {
     "modid": "minetts",
     "modName": "TTSmod",
-    "version": "0.0.06a",
+    "version": "0.0.08a",
     "author": "WinLinuxMan, Nick Hammerich",
     "websiteURL": "https://mcreator.net",
     "license": "GNU General Public License version 2 (GPLv2)",

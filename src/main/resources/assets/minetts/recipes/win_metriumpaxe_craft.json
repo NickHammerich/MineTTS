@@ -1,0 +1,30 @@
+{
+  "group": "minetts",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minetts:win_10_tiley"
+    },
+    "1": {
+      "item": "minetts:win_10_tiley"
+    },
+    "2": {
+      "item": "minetts:win_10_tiley"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "minetts:win_10pickaxe",
+    "count": 1
+  }
+}
