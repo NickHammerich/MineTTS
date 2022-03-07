@@ -1,4 +1,4 @@
-# MineTTS
+# TTSmod
 # Original Idea by Nick Hammerich.
 
 This is a mod for Minecraft Java Edition which adds TTS (error)-related stuff such as:
