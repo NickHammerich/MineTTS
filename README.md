@@ -3,7 +3,7 @@
 
 This is a mod for Minecraft Java Edition which adds TTS (error)-related stuff such as:
 1) Mobs 
-- [ ] 1.1) Nickolay
+- [X] 1.1) Nickolay
 - [ ] 1.2) Sam
 - [ ] 1.3) Irina.
 2) Blocks
