@@ -1,0 +1,13 @@
+{
+  "group": "minetts",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minetts:w_10block"
+    }
+  ],
+  "result": {
+    "item": "minetts:win_10_tiley",
+    "count": 9
+  }
+}
