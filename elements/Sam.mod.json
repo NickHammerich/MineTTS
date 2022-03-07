@@ -21,7 +21,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:TtsmodTab"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -80,13 +80,13 @@
       "value": "CUSTOM:Win10Tiley"
     },
     "livingSound": {
-      "value": ""
+      "value": "CUSTOM:sam-idle1"
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "CUSTOM:sam-damage1"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "CUSTOM:sam-death1"
     },
     "stepSound": {
       "value": ""

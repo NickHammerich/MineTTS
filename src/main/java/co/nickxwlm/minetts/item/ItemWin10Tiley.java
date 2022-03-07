@@ -10,13 +10,13 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraft.world.World;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
 import java.util.List;
 
+import co.nickxwlm.minetts.creativetab.TabTtsmodTab;
 import co.nickxwlm.minetts.ElementsMinettsMod;
 
 @ElementsMinettsMod.ModElement.Tag
@@ -43,7 +43,7 @@ public class ItemWin10Tiley extends ElementsMinettsMod.ModElement {
 			maxStackSize = 64;
 			setUnlocalizedName("win_10_tiley");
 			setRegistryName("win_10_tiley");
-			setCreativeTab(CreativeTabs.MATERIALS);
+			setCreativeTab(TabTtsmodTab.tab);
 		}
 
 		@Override

@@ -14,7 +14,6 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
@@ -25,6 +24,7 @@ import net.minecraft.block.Block;
 import java.util.List;
 
 import co.nickxwlm.minetts.item.ItemWin10Tiley;
+import co.nickxwlm.minetts.creativetab.TabTtsmodTab;
 import co.nickxwlm.minetts.ElementsMinettsMod;
 
 @ElementsMinettsMod.ModElement.Tag
@@ -56,7 +56,7 @@ public class BlockWin10Block extends ElementsMinettsMod.ModElement {
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(255);
-			setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+			setCreativeTab(TabTtsmodTab.tab);
 		}
 
 		@Override

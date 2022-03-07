@@ -21,7 +21,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:TtsmodTab"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -80,13 +80,13 @@
       "value": "Items.IRON_NUGGET"
     },
     "livingSound": {
-      "value": ""
+      "value": "CUSTOM:nickolay-idle1"
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "CUSTOM:nickolay-damage1"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "CUSTOM:nickolay-death1"
     },
     "stepSound": {
       "value": ""

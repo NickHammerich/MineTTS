@@ -1,1 +1,90 @@
-{}
+{
+  "nickolay-idle1": {
+    "category": "neutral",
+    "subtitle": "subtitles.nickolay-idle1",
+    "sounds": [
+      {
+        "name": "minetts:idle1n",
+        "stream": false
+      },
+      {
+        "name": "minetts:idle2n",
+        "stream": false
+      },
+      {
+        "name": "minetts:idle3n",
+        "stream": false
+      }
+    ]
+  },
+  "nickolay-damage1": {
+    "category": "neutral",
+    "subtitle": "subtitles.nickolay-damage1",
+    "sounds": [
+      {
+        "name": "minetts:damage1n",
+        "stream": false
+      },
+      {
+        "name": "minetts:damage2n",
+        "stream": false
+      }
+    ]
+  },
+  "nickolay-death1": {
+    "category": "neutral",
+    "subtitle": "subtitles.nickolay-death1",
+    "sounds": [
+      {
+        "name": "minetts:deathn",
+        "stream": false
+      }
+    ]
+  },
+  "sam-idle1": {
+    "category": "neutral",
+    "subtitle": "subtitles.sam-idle1",
+    "sounds": [
+      {
+        "name": "minetts:idle1s",
+        "stream": false
+      },
+      {
+        "name": "minetts:idle2s",
+        "stream": false
+      },
+      {
+        "name": "minetts:idle3s",
+        "stream": false
+      }
+    ]
+  },
+  "sam-damage1": {
+    "category": "neutral",
+    "subtitle": "subtitles.sam-damage1",
+    "sounds": [
+      {
+        "name": "minetts:damage1s",
+        "stream": false
+      },
+      {
+        "name": "minetts:damage2s",
+        "stream": false
+      },
+      {
+        "name": "minetts:damage3s",
+        "stream": false
+      }
+    ]
+  },
+  "sam-death1": {
+    "category": "neutral",
+    "subtitle": "subtitles.sam-death1",
+    "sounds": [
+      {
+        "name": "minetts:deaths",
+        "stream": false
+      }
+    ]
+  }
+}

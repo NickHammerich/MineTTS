@@ -1,5 +1,13 @@
+itemGroup.tabttsmod_tab=TTSmod Stuff
+subtitles.sam-damage1=Sam gets hit
+item.win_10pickaxe.name=WinMetrium Pickaxe
+subtitles.sam-idle1=Sam's speech
+tile.win_10_block.name=WinMetrium Ore
+subtitles.sam-death1=Sam dies
+subtitles.nickolay-death=Nickolay dies
+subtitles.nickolay-death1=Nickolay dies
+subtitles.nickolay-damage1=Nickolay gets hit
 item.win_10_tiley.name=WinMetronium Piece
 entity.sam.name=Microsoft Sam
-item.win_10pickaxe.name=WinMetrium Pickaxe
-tile.win_10_block.name=WinMetrium Ore
+subtitles.nickolay-idle1=Nickolay's speech
 entity.nickolay.name=Digalo Nickolai
