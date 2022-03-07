@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minetts:blocks/bsodpart",
+    "up": "minetts:blocks/bsodpart",
+    "north": "minetts:blocks/bsodpart",
+    "east": "minetts:blocks/bsodpart",
+    "south": "minetts:blocks/bsodpart",
+    "west": "minetts:blocks/bsodpart",
+    "particle": "minetts:blocks/bsodpart"
+  }
+}
