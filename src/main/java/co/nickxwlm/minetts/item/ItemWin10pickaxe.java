@@ -11,12 +11,12 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import java.util.Set;
 import java.util.HashMap;
 
+import co.nickxwlm.minetts.creativetab.TabTtsmodTab;
 import co.nickxwlm.minetts.ElementsMinettsMod;
 
 @ElementsMinettsMod.ModElement.Tag
@@ -38,7 +38,7 @@ public class ItemWin10pickaxe extends ElementsMinettsMod.ModElement {
 				ret.put("pickaxe", 3);
 				return ret.keySet();
 			}
-		}.setUnlocalizedName("win_10pickaxe").setRegistryName("win_10pickaxe").setCreativeTab(CreativeTabs.TOOLS));
+		}.setUnlocalizedName("win_10pickaxe").setRegistryName("win_10pickaxe").setCreativeTab(TabTtsmodTab.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

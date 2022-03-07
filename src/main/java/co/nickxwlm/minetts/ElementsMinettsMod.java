@@ -56,6 +56,15 @@ public class ElementsMinettsMod implements IFuelHandler, IWorldGenerator {
 	public final List<Supplier<Potion>> potions = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public ElementsMinettsMod() {
+		sounds.put(new ResourceLocation("minetts", "nickolay-idle1"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("minetts", "nickolay-idle1")));
+		sounds.put(new ResourceLocation("minetts", "nickolay-damage1"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("minetts", "nickolay-damage1")));
+		sounds.put(new ResourceLocation("minetts", "nickolay-death1"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("minetts", "nickolay-death1")));
+		sounds.put(new ResourceLocation("minetts", "sam-idle1"), new net.minecraft.util.SoundEvent(new ResourceLocation("minetts", "sam-idle1")));
+		sounds.put(new ResourceLocation("minetts", "sam-damage1"), new net.minecraft.util.SoundEvent(new ResourceLocation("minetts", "sam-damage1")));
+		sounds.put(new ResourceLocation("minetts", "sam-death1"), new net.minecraft.util.SoundEvent(new ResourceLocation("minetts", "sam-death1")));
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {
