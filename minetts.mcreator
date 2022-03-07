@@ -1,5 +1,7 @@
 {
-  "id_map": {},
+  "id_map": {
+    "ENTITY": 2
+  },
   "mod_elements": [
     {
       "name": "Win10Block",
@@ -18,6 +20,18 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "win_10_tiley"
+    },
+    {
+      "name": "Nickolay",
+      "type": "mob",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 1,
+        "1": 2
+      },
+      "registry_name": "nickolay"
     }
   ],
   "variable_elements": [],
@@ -25,7 +39,8 @@
   "language_map": {
     "en_us": {
       "item.win_10_tiley.name": "WinMetronium Piece",
-      "tile.win_10_block.name": "WinMetrium Ore"
+      "tile.win_10_block.name": "WinMetrium Ore",
+      "entity.nickolay.name": "Nickolay"
     }
   },
   "foldersRoot": {
@@ -34,18 +49,20 @@
   },
   "workspaceSettings": {
     "modid": "minetts",
-    "modName": "MineTTS",
-    "version": "1.0.0",
-    "author": "qwer, MCreator",
+    "modName": "TTSmod",
+    "version": "0.0.06a",
+    "author": "WinLinuxMan, Nick Hammerich",
     "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "license": "GNU General Public License version 2 (GPLv2)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "ttsmod",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.12.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "co.nickxwlm.minetts",
     "lockBaseModFiles": false
   },
