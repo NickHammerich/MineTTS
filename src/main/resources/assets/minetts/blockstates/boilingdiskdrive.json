@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "minetts:boilingdiskdrive"
+    },
+    "facing=north": {
+      "model": "minetts:boilingdiskdrive"
+    },
+    "facing=east": {
+      "model": "minetts:boilingdiskdrive",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minetts:boilingdiskdrive",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minetts:boilingdiskdrive",
+      "y": 270
+    }
+  }
+}

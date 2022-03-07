@@ -1,0 +1,45 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 205,
+          "y": 72
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Insert Disk",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Insert Disk",
+          "x": 185,
+          "y": 52
+        }
+      }
+    ],
+    "onTick": {
+      "name": "CakeChecker"
+    }
+  }
+}

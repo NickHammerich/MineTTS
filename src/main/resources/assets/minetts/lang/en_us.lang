@@ -1,12 +1,11 @@
-subtitles.sam-wrong-item=Incorrect item was given to Sam
 itemGroup.tabttsmod_tab=TTSmod Stuff
 subtitles.sam-damage1=Sam gets hit
 item.win_10pickaxe.name=WinMetrium Pickaxe
 subtitles.sam-idle1=Sam's speech
 tile.win_10_block.name=WinMetrium Ore
 item.gimmetacos.name=Taco
-subtitles.ayia-sam=You stealer!
 subtitles.sam-death1=Sam dies
+tile.boilingdiskdrive.name=Disk Drive
 tile.bsodparts.name=Chromakey Block
 tile.w_10block.name=WinMetrium Block
 subtitles.nickolay-death=Nickolay dies

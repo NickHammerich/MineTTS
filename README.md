@@ -16,7 +16,7 @@ This is a mod for Minecraft Java Edition which adds TTS (error)-related stuff su
 - [X] 3.1) WinMetrium Pickaxe.
     
  PLANNED STUFF:
-  - [ ] 1) A disk drive w/ explosive function upon putting a cake into it.
+  - [X] 1) A disk drive w/ explosive function upon putting a cake into it.
   - [X] 2) Projectile CD-ROMs (weapon)
   - [ ] 3) The TTS dimension
   - [ ] 4) Tsar-Bomba
