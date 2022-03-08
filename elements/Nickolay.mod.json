@@ -113,8 +113,8 @@
     "doesDespawnWhenIdle": true,
     "spawningProbability": 1,
     "mobSpawningType": "ambient",
-    "minNumberOfMobsPerGroup": 15,
-    "maxNumberOfMobsPerGroup": 15,
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 2,
     "restrictionBiomes": [],
     "spawnInDungeons": false
   }
