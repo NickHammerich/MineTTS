@@ -1,9 +1,9 @@
 # TTSmod (original Idea by Nick Hammerich).
 ![TTSmod Banner](https://user-images.githubusercontent.com/74654571/156976681-e2d83671-1bdc-407a-a3c9-a443cd4f62fc.png)
 
-This is a mod for Minecraft Java Edition which adds TTS (error)-related stuff such as:
+This is a mod for Minecraft Java Edition which adds TTS-related stuff such as:
 1) Mobs 
-- [X] 1.1) Nickolay
+- [X] 1.1) Nickolai
 - [X] 1.2) Sam
 - [ ] 1.3) Irina.
 
@@ -30,9 +30,9 @@ This is a mod for Minecraft Java Edition which adds TTS (error)-related stuff su
 ---------------------------
 # *HOW TO COMPILE:*
 1) Download a source file using "Code->Download Zip" buttons.
-2) Unpack a recently donwloaded file to any desired place you want.
+2) Unpack a recently downloaded file to any desired place you want.
 3) Open MCreator (version 2021.1) and import a project from a folder in which you've unpacked the source files.
-4) Upon succesful project import, click a hammer icon on the top. 
+4) Upon successful project import, click a hammer icon on the top. 
 ![image](https://user-images.githubusercontent.com/74654571/156981519-3ac50253-7db7-4823-a592-3dad3e560f82.png)
 5) If successfully compiled, you can always find a compiled JAR-file in {source folder}\build\reobfJar.
 -------------------------------------------

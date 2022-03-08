@@ -124,7 +124,11 @@ public class EntityNickolay extends ElementsMinettsMod.ModElement {
 			if (this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3D);
 			if (this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
+<<<<<<< HEAD
 				this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(12D);
+=======
+				this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(15D);
+>>>>>>> 1d10756a17bd42f31505033aa2c09f3bce4ef03d
 			if (this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) != null)
 				this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(0D);
 		}
