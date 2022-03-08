@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minetts:blocks/crossblock",
+    "up": "minetts:blocks/crossblock",
+    "north": "minetts:blocks/crossblock",
+    "east": "minetts:blocks/crossblock",
+    "south": "minetts:blocks/crossblock",
+    "west": "minetts:blocks/crossblock",
+    "particle": "minetts:blocks/crossblock"
+  }
+}

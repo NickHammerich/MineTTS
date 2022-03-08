@@ -3,6 +3,7 @@ item.shortsboots.name=Shorts Boots
 tile.bsodparts.name=Chromakey Block
 subtitles.nickolay-death1=Nickolay dies
 subtitles.nickolay-damage1=Nickolay gets hit
+tile.errorblock.name=Error Block
 item.cdrs.name=Working Compact Disk
 subtitles.nickolay-idle1=Nickolay's speech
 tile.crashiumblock.name=BSODium Block

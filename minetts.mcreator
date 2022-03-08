@@ -301,6 +301,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Errorblock",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "errorblock"
     }
   ],
   "variable_elements": [],
@@ -368,6 +377,7 @@
       "tile.bsodparts.name": "Блок хромакея",
       "subtitles.nickolay-death1": "Николай погиб",
       "subtitles.nickolay-damage1": "Николай получает урон",
+      "tile.errorblock.name": "Errorblock",
       "item.cdrs.name": "Рабочая болванка",
       "subtitles.nickolay-idle1": "Николай говорит",
       "tile.crashiumblock.name": "Блок БСОДия",
@@ -395,6 +405,7 @@
       "tile.bsodparts.name": "Chromakey Block",
       "subtitles.nickolay-death1": "Nickolay dies",
       "subtitles.nickolay-damage1": "Nickolay gets hit",
+      "tile.errorblock.name": "Error Block",
       "item.cdrs.name": "Working Compact Disk",
       "subtitles.nickolay-idle1": "Nickolay\u0027s speech",
       "tile.crashiumblock.name": "BSODium Block",
@@ -424,7 +435,7 @@
   "workspaceSettings": {
     "modid": "minetts",
     "modName": "TTSmod",
-    "version": "0.0.17a",
+    "version": "0.0.18a",
     "author": "WinLinuxMan, Nick Hammerich",
     "websiteURL": "https://mcreator.net",
     "license": "GNU General Public License version 2 (GPLv2)",
