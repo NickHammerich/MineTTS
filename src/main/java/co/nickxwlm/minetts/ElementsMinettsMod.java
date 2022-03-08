@@ -45,7 +45,6 @@ import java.util.ArrayList;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Retention;
 
-import co.nickxwlm.minetts.gui.GuiTacomachine;
 import co.nickxwlm.minetts.gui.GuiEasterEgg;
 import co.nickxwlm.minetts.gui.GuiDiskDriveslot;
 
@@ -67,7 +66,6 @@ public class ElementsMinettsMod implements IFuelHandler, IWorldGenerator {
 		sounds.put(new ResourceLocation("minetts", "sam-idle1"), new net.minecraft.util.SoundEvent(new ResourceLocation("minetts", "sam-idle1")));
 		sounds.put(new ResourceLocation("minetts", "sam-damage1"), new net.minecraft.util.SoundEvent(new ResourceLocation("minetts", "sam-damage1")));
 		sounds.put(new ResourceLocation("minetts", "sam-death1"), new net.minecraft.util.SoundEvent(new ResourceLocation("minetts", "sam-death1")));
-		sounds.put(new ResourceLocation("minetts", "sam-yum"), new net.minecraft.util.SoundEvent(new ResourceLocation("minetts", "sam-yum")));
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {
@@ -138,8 +136,6 @@ public class ElementsMinettsMod implements IFuelHandler, IWorldGenerator {
 		public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
 			if (id == GuiEasterEgg.GUIID)
 				return new GuiEasterEgg.GuiContainerMod(world, x, y, z, player);
-			if (id == GuiTacomachine.GUIID)
-				return new GuiTacomachine.GuiContainerMod(world, x, y, z, player);
 			if (id == GuiDiskDriveslot.GUIID)
 				return new GuiDiskDriveslot.GuiContainerMod(world, x, y, z, player);
 			return null;
@@ -149,8 +145,6 @@ public class ElementsMinettsMod implements IFuelHandler, IWorldGenerator {
 		public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
 			if (id == GuiEasterEgg.GUIID)
 				return new GuiEasterEgg.GuiWindow(world, x, y, z, player);
-			if (id == GuiTacomachine.GUIID)
-				return new GuiTacomachine.GuiWindow(world, x, y, z, player);
 			if (id == GuiDiskDriveslot.GUIID)
 				return new GuiDiskDriveslot.GuiWindow(world, x, y, z, player);
 			return null;

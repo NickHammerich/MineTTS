@@ -18,13 +18,16 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.ai.EntityAIWander;
+import net.minecraft.entity.ai.EntityAITempt;
 import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAILookIdle;
+import net.minecraft.entity.ai.EntityAIHurtByTarget;
+import net.minecraft.entity.ai.EntityAIAttackMelee;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.EnumCreatureAttribute;
-import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.model.ModelRenderer;
@@ -36,8 +39,9 @@ import java.util.Iterator;
 import java.util.HashMap;
 import java.util.ArrayList;
 
-import co.nickxwlm.minetts.procedure.ProcedureTacochecker;
+import co.nickxwlm.minetts.procedure.ProcedureEraseTaco;
 import co.nickxwlm.minetts.item.ItemWin10Tiley;
+import co.nickxwlm.minetts.item.ItemGimmetacos;
 import co.nickxwlm.minetts.ElementsMinettsMod;
 
 @ElementsMinettsMod.ModElement.Tag
@@ -51,7 +55,7 @@ public class EntitySam extends ElementsMinettsMod.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> EntityEntryBuilder.create().entity(EntityCustom.class).id(new ResourceLocation("minetts", "sam"), ENTITYID)
-				.name("sam").tracker(64, 3, true).egg(-16777216, -6750208).build());
+				.name("sam").tracker(20, 3, true).egg(-16777216, -6750208).build());
 	}
 
 	@Override
@@ -79,7 +83,7 @@ public class EntitySam extends ElementsMinettsMod.ModElement {
 			};
 		});
 	}
-	public static class EntityCustom extends EntityCreature {
+	public static class EntityCustom extends EntityMob {
 		public EntityCustom(World world) {
 			super(world);
 			setSize(0.6f, 1.8f);
@@ -91,9 +95,12 @@ public class EntitySam extends ElementsMinettsMod.ModElement {
 		@Override
 		protected void initEntityAI() {
 			super.initEntityAI();
-			this.tasks.addTask(1, new EntityAIWander(this, 1));
-			this.tasks.addTask(2, new EntityAILookIdle(this));
-			this.tasks.addTask(3, new EntityAISwimming(this));
+			this.tasks.addTask(1, new EntityAIAttackMelee(this, 0.8, false));
+			this.tasks.addTask(2, new EntityAITempt(this, 1, new ItemStack(ItemGimmetacos.block, (int) (1)).getItem(), false));
+			this.targetTasks.addTask(3, new EntityAIHurtByTarget(this, true));
+			this.tasks.addTask(4, new EntityAIWander(this, 1));
+			this.tasks.addTask(5, new EntityAILookIdle(this));
+			this.tasks.addTask(6, new EntityAISwimming(this));
 		}
 
 		@Override
@@ -136,11 +143,7 @@ public class EntitySam extends ElementsMinettsMod.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ProcedureTacochecker.executeProcedure($_dependencies);
+				ProcedureEraseTaco.executeProcedure($_dependencies);
 			}
 			return true;
 		}
@@ -153,9 +156,9 @@ public class EntitySam extends ElementsMinettsMod.ModElement {
 			if (this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3D);
 			if (this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
-				this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(1000D);
+				this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(20D);
 			if (this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) != null)
-				this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3D);
+				this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(4D);
 		}
 	}
 

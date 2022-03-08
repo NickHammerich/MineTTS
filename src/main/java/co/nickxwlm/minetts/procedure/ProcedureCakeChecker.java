@@ -67,6 +67,16 @@ public class ProcedureCakeChecker extends ElementsMinettsMod.ModElement {
 		}.getItemStack((int) (0))).getItem() == new ItemStack(Items.CAKE, (int) (1)).getItem())) {
 			if (entity instanceof EntityPlayer)
 				((EntityPlayer) entity).closeScreen();
+			if (entity instanceof EntityPlayerMP) {
+				Container _current = ((EntityPlayerMP) entity).openContainer;
+				if (_current instanceof Supplier) {
+					Object invobj = ((Supplier) _current).get();
+					if (invobj instanceof Map) {
+						((Slot) ((Map) invobj).get((int) (0))).decrStackSize((int) (1));
+						_current.detectAndSendChanges();
+					}
+				}
+			}
 			if (!world.isRemote) {
 				world.createExplosion(null, (int) x, (int) y, (int) z, (float) 12, true);
 			}

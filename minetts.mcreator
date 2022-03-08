@@ -168,50 +168,6 @@
       "registry_name": "bsodparts"
     },
     {
-      "name": "Tacomachine",
-      "type": "gui",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 2
-      },
-      "registry_name": "tacomachine"
-    },
-    {
-      "name": "Tacochecker",
-      "type": "procedure",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tacochecker",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "EraseTaco",
       "type": "procedure",
       "sortid": 20,
@@ -224,22 +180,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -329,6 +269,38 @@
           }
         ]
       }
+    },
+    {
+      "name": "Shorts",
+      "type": "armor",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shorts",
+      "metadata": {
+        "eh": false,
+        "el": true,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "Samdisappear",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "samdisappear",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -387,42 +359,46 @@
       ],
       "category": "neutral",
       "subtitle": "Sam dies"
-    },
-    {
-      "name": "sam-yum",
-      "files": [
-        "happys"
-      ],
-      "category": "neutral",
-      "subtitle": "Sam\u0027s happy with his taco!"
     }
   ],
   "language_map": {
     "ru_ru": {
       "itemGroup.tabttsmod_tab": "Вещи из мода TTSmod",
+      "item.shortsboots.name": "Shorts Boots",
+      "tile.bsodparts.name": "Блок хромакея",
+      "subtitles.nickolay-death1": "Николай погиб",
+      "subtitles.nickolay-damage1": "Николай получает урон",
+      "item.cdrs.name": "Рабочая болванка",
+      "subtitles.nickolay-idle1": "Николай говорит",
+      "tile.crashiumblock.name": "Блок БСОДия",
+      "entity.nickolay.name": "Digalo Nickolai",
       "subtitles.sam-damage1": "Сэм получает урон",
       "item.win_10pickaxe.name": "Кирка из ВинМетрия",
       "subtitles.sam-idle1": "Сэм говорит",
       "tile.win_10_block.name": "Руда ВинМетрия",
       "item.gimmetacos.name": "Тако",
       "subtitles.sam-death1": "Сэм погиб",
-      "tile.boilingdiskdrive.name": "Disk Drive",
-      "tile.bsodparts.name": "Блок хромакея",
+      "tile.boilingdiskdrive.name": "Дисковод",
+      "item.shortslegs.name": "Shorts",
       "tile.w_10block.name": "Блок ВинМетрия",
       "subtitles.nickolay-death": "Николай погиб",
-      "subtitles.nickolay-death1": "Николай погиб",
       "subtitles.sam-yum": "Сэм съел тако",
-      "subtitles.nickolay-damage1": "Николай получает урон",
-      "item.cdrs.name": "Рабочая болванка",
+      "item.shortshelmet.name": "Shorts Helmet",
       "item.win_10_tiley.name": "Кусочек ВинМетрия",
       "entity.sam.name": "Microsoft Sam",
-      "subtitles.nickolay-idle1": "Николай говорит",
       "item.compact_disk.name": "Компакт-диск",
-      "entity.nickolay.name": "Digalo Nickolai",
-      "tile.crashiumblock.name": "Блок БСОДия"
+      "item.shortsbody.name": "Shorts Body"
     },
     "en_us": {
       "itemGroup.tabttsmod_tab": "TTSmod Stuff",
+      "item.shortsboots.name": "Shorts Boots",
+      "tile.bsodparts.name": "Chromakey Block",
+      "subtitles.nickolay-death1": "Nickolay dies",
+      "subtitles.nickolay-damage1": "Nickolay gets hit",
+      "item.cdrs.name": "Working Compact Disk",
+      "subtitles.nickolay-idle1": "Nickolay\u0027s speech",
+      "tile.crashiumblock.name": "BSODium Block",
+      "entity.nickolay.name": "Digalo Nickolai",
       "subtitles.sam-damage1": "Sam gets hit",
       "item.win_10pickaxe.name": "WinMetrium Pickaxe",
       "subtitles.sam-idle1": "Sam\u0027s speech",
@@ -430,19 +406,15 @@
       "item.gimmetacos.name": "Taco",
       "subtitles.sam-death1": "Sam dies",
       "tile.boilingdiskdrive.name": "Disk Drive",
-      "tile.bsodparts.name": "Chromakey Block",
+      "item.shortslegs.name": "Shorts",
       "tile.w_10block.name": "WinMetrium Block",
       "subtitles.nickolay-death": "Nickolay dies",
-      "subtitles.nickolay-death1": "Nickolay dies",
       "subtitles.sam-yum": "Sam\u0027s happy with his taco!",
-      "subtitles.nickolay-damage1": "Nickolay gets hit",
-      "item.cdrs.name": "Working Compact Disk",
+      "item.shortshelmet.name": "Shorts Helmet",
       "item.win_10_tiley.name": "WinMetronium Piece",
       "entity.sam.name": "Microsoft Sam",
-      "subtitles.nickolay-idle1": "Nickolay\u0027s speech",
       "item.compact_disk.name": "Compact Disk",
-      "entity.nickolay.name": "Digalo Nickolai",
-      "tile.crashiumblock.name": "BSODium Block"
+      "item.shortsbody.name": "Shorts Body"
     }
   },
   "foldersRoot": {
@@ -452,7 +424,7 @@
   "workspaceSettings": {
     "modid": "minetts",
     "modName": "TTSmod",
-    "version": "0.0.16a",
+    "version": "0.0.17a",
     "author": "WinLinuxMan, Nick Hammerich",
     "websiteURL": "https://mcreator.net",
     "license": "GNU General Public License version 2 (GPLv2)",

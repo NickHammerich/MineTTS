@@ -86,15 +86,5 @@
         "stream": false
       }
     ]
-  },
-  "sam-yum": {
-    "category": "neutral",
-    "subtitle": "subtitles.sam-yum",
-    "sounds": [
-      {
-        "name": "minetts:happys",
-        "stream": false
-      }
-    ]
   }
 }
